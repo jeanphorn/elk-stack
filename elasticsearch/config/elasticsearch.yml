@@ -1,0 +1,21 @@
+# ======================== Elasticsearch Configuration =========================
+#
+# Use a descriptive name for your cluster:
+#
+ cluster.name: es_log_monitor
+#
+# ------------------------------------ Node ------------------------------------
+#
+# Use a descriptive name for the node:
+#
+ node.name: node-es1
+
+ bootstrap.memory_lock: true
+
+ network.host: 192.168.1.102
+ http.port: 9200
+
+ discovery.zen.ping.unicast.hosts: ["192.168.1.103"]
+
+ #node.master: true
+ #node.data: false
